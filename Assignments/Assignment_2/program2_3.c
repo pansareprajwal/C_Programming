@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////
 //
 //  Function name : Display
-//  Description :   Accept the number from user and Print Stars
+//  Description :   Reply Hello and Demo as per user input
 //  Input :         int
 //  Output :        string
 //  Author :        Prajwal Sanjay Pansare
@@ -13,18 +13,13 @@
 
 void Display(int iNo)
 {
-    int iCnt = 0;
-
-    if (iNo < 0)
+    if(iNo < 10)
     {
-        iNo = -iNo;
+        printf("Hello");
     }
-    
-
-    while (iCnt < iNo)
+    else
     {
-        printf(" * ");
-        iCnt++;
+        printf("Demo");
     }
 }
 
@@ -33,6 +28,7 @@ void Display(int iNo)
 //  Entry point function for the application
 //
 //////////////////////////////////////////////////////////////
+
 
 int main()
 {

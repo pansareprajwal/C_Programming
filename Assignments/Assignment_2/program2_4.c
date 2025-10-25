@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////
 //
 //  Function name : Display
-//  Description :   Accept the number from user and Print Stars
+//  Description :   Take two inputs from user and print 1st input on amount of 2nd input
 //  Input :         int
 //  Output :        string
 //  Author :        Prajwal Sanjay Pansare
@@ -11,20 +11,23 @@
 //
 //////////////////////////////////////////////////////////////
 
-void Display(int iNo)
+void Display(int iNo, int iFrequency)
 {
     int iCnt = 0;
 
-    if (iNo < 0)
+    if(iNo < 0)
     {
         iNo = -iNo;
     }
-    
 
-    while (iCnt < iNo)
+    if(iFrequency < 0)
     {
-        printf(" * ");
-        iCnt++;
+        iFrequency = -iFrequency;
+    }
+
+    for(iCnt = 1; iCnt <= iFrequency; iCnt++)
+    {
+        printf(" %d ", iNo);
     }
 }
 
@@ -37,11 +40,15 @@ void Display(int iNo)
 int main()
 {
     int iValue = 0;
+    int iCount = 0;
 
     printf("Enter number : ");
     scanf("%d", &iValue);
 
-    Display(iValue);
+    printf("Enter frequency : ");
+    scanf("%d", &iCount);
+
+    Display(iValue, iCount);
 
     return 0;
 }
