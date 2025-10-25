@@ -2,16 +2,16 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : NonFact
-//  Description :   Display the multiplication of non factors
+//  Function name : SumNonFact
+//  Description :   Display the summation of the non factors
 //  Input :         int
-//  Output :        string
+//  Output :        int
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          26/10/2025
 //
 //////////////////////////////////////////////////////////////
 
-void NonFact(int iNo)
+int SumNonFact(int iNo)
 {
     if(iNo < 0)
     {
@@ -19,14 +19,17 @@ void NonFact(int iNo)
     }
 
     int iCnt = 0;
+    int iTotal = 0;
 
-    for(iCnt = 2; iCnt <= iNo; iCnt++)
+    for (iCnt = 2; iCnt <= iNo; iCnt++)
     {
         if((iNo % iCnt) != 0)
         {
-            printf(" %d ", iCnt);
+            iTotal = iTotal + iCnt;
         }
     }
+
+    return iTotal;
 }
 
 //////////////////////////////////////////////////////////////
@@ -38,11 +41,14 @@ void NonFact(int iNo)
 int main()
 {
     int iValue = 0;
+    int iRet = 0;
 
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    NonFact(iValue);
+    iRet = SumNonFact(iValue);
+
+    printf("%d", iRet);
 
     return 0;
 }

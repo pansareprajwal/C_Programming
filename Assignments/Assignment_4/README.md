@@ -22,8 +22,8 @@ PROGRAM3:
 PROGRAM4:
 | Input           | Output              |
 | --------------  | ---------------     |
-| Enter number 10 | Divisible by 5      |
-| Enter number  9 | Not Divisible by 5  |
+| Enter number 12 | Divisible by 50     |
+| Enter number  10 | Not Divisible by 37  |
 
 PROGRAM5:
 | Input           | Output           |
