@@ -26,8 +26,9 @@ PROGRAM4:
 | Enter number  10 |              37  |
 
 PROGRAM5:
-| Input           | Output           |
+| Input            | Output              |
+|----------------- | ------------------- |
 | Enter number 12  |              -34    |
-| Enter number  10 |              -29 |
+| Enter number  10 |              -29    |
 
 
