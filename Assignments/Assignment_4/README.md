@@ -27,7 +27,7 @@ PROGRAM4:
 
 PROGRAM5:
 | Input           | Output           |
-| --------------  | ---------------- |
-| iValue = 5      |  * * * * *       |
+| Enter number 12  |              -34    |
+| Enter number  10 |              -29 |
 
 
