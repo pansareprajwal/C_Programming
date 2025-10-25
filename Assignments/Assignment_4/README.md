@@ -1,7 +1,9 @@
 PROGRAM1:
-| Input               | Output        |
-| ------------------- | ------------- |
-| iNo1 = 15, iNo2 = 5 | Division is 3 |
+| Input                   | Output        |
+| ----------------------- | ------------- |
+| Enter the number : 12   | 12            |
+| Enter the number : 12   | 13            |
+| Enter the number : 12   | 10            |
 
 PROGRAM2:
 | Input               | Output        |
