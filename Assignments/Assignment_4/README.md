@@ -8,11 +8,9 @@ PROGRAM1:
 PROGRAM2:
 | Input               | Output        |
 | ------------------- | ------------- |
-|         -           |   Marvellous  |
-|         -           |   Marvellous  |
-|         -           |   Marvellous  |
-|         -           |   Marvellous  |
-|         -           |   Marvellous  |
+| Enter number : 12  |   6  4  3    2   1  |
+| Enter number : 13  |   1                 |
+| Enter number : 10  |   5  2   1          |
 
 PROGRAM3:
 | Input               | Output        |
