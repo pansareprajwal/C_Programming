@@ -20,10 +20,10 @@ PROGRAM3:
 | Enter number : 10 | 3 4 6 7 8 9      |
 
 PROGRAM4:
-| Input           | Output              |
-| --------------  | ---------------     |
-| Enter number 12 | Divisible by 50     |
-| Enter number  10 | Not Divisible by 37  |
+| Input            | Output              |
+| --------------   | ---------------     |
+| Enter number 12  |              50     |
+| Enter number  10 |              37  |
 
 PROGRAM5:
 | Input           | Output           |
