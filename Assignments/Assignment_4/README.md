@@ -1,9 +1,9 @@
 PROGRAM1:
 | Input                   | Output        |
 | ----------------------- | ------------- |
-| Enter the number : 12   | 12            |
-| Enter the number : 12   | 13            |
-| Enter the number : 12   | 10            |
+| Enter the number : 12   | 144           |
+| Enter the number : 13   | 1             |
+| Enter the number : 10   | 10            |
 
 PROGRAM2:
 | Input               | Output        |
