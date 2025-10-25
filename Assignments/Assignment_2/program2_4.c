@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////
 //
 //  Function name : Display
-//  Description :   Take two inputs from user and print 1st input on amount of 2nd input
+//  Description :   print 1st input to amount of 2nd input
 //  Input :         int
 //  Output :        string
 //  Author :        Prajwal Sanjay Pansare
