@@ -15,7 +15,9 @@ PROGRAM2:
 PROGRAM3:
 | Input               | Output        |
 | ------------------- | ------------- |
-|         -           | 54321         |
+| Enter number : 12 | 5 7 8 9 10 11     |
+| Enter number : 13 | 2 3 4 5 6 7 8 9 10 11 12 |
+| Enter number : 10 | 3 4 6 7 8 9      |
 
 PROGRAM4:
 | Input           | Output              |
