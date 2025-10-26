@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Table
-//  Description :   To get the table of the input number
+//  Function name : TableRev
+//  Description :   To get the reverse table of the input number
 //  Input :         int
 //  Output :        void
 //  Author :        Prajwal Sanjay Pansare
@@ -11,7 +11,7 @@
 //
 //////////////////////////////////////////////////////////////
 
-void Table(int iNo)
+void TableRev(int iNo)
 {
     if(iNo < 0)
     {
@@ -21,7 +21,7 @@ void Table(int iNo)
     int iCnt = 0;
     int iCount = 0;
 
-    for(iCnt = 1, iCount = iNo; iCnt <= 10; iCnt++)
+    for(iCnt = 10, iCount = iNo; iCnt >= 1; iCnt--)
     {
         printf(" %d ", iCnt*iCount);
     }
@@ -41,7 +41,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    Table(iValue);
+    TableRev(iValue);
 
     return 0;
 }
