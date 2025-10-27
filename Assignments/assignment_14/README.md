@@ -1,22 +1,10 @@
 PROGRAM1:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 2395`  | `5
-9
-3
-2` |
-|   2   | `Enter the number : 1018`  | `8
-1
-0
-1` |
-|   3   | `Enter the number : -1018`  | `8
-1
-0
-1` |
-|   3   | `Enter the number : 9000`  | `0
-0
-0
-9` |
+|   1   | `Enter the number : 2395`  | `5 9 3 2` |
+|   2   | `Enter the number : 1018`  | `8 1 0 1` |
+|   3   | `Enter the number : -1018`  | `8 1 0 1` |
+|   3   | `Enter the number : 9000`  | `0 0 0 9` |
 
 
 PROGRAM2:
