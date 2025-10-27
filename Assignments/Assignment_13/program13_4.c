@@ -1,28 +1,36 @@
 #include<stdio.h>
-#include<stdbool.h>
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : is_divisible_by_five
-//  Description :   To check number is divisible of 5
+//  Function name : Sum_natural_number
+//  Description :   To sum of all natural number to N
 //  Input :         int
-//  Output :        bool
+//  Output :        int
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          27/10/2025
 //
 //////////////////////////////////////////////////////////////
 
-bool is_divisible_by_five(int iNumber)
+int Sum_natural_number(int iNo)
 {
-    if((iNumber % 5) == 0)
+    if(iNo < 0)
     {
-        return true;
+        iNo = -iNo;
     }
-    else
+    
+    int iCnt, iSum = 0;
+
+    for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
-        return false;
+        iSum = iSum + iCnt;
     }
+
+    return iSum;
 }
+
+/*
+        Time Complexity : O(N)
+*/
 
 //////////////////////////////////////////////////////////////
 //
@@ -32,22 +40,13 @@ bool is_divisible_by_five(int iNumber)
 
 int main()
 {
-    int iValue = 0;
-    bool bRet = false;
+    int limit = 0;
 
     printf("Enter number : ");
-    scanf("%d",&iValue);
+    scanf("%d",&limit);
 
-    bRet = is_divisible_by_five(iValue);
-
-    if(bRet == true)
-    {
-        printf("Number is divisible by 5");
-    }
-    else
-    {
-        printf("Number is not divisible by 5");
-    }
+    printf("%d\n",Sum_natural_number(limit));
   
     return 0;
 }
+
