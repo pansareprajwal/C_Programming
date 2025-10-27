@@ -4,41 +4,41 @@ PROGRAM1:
 |   1   | `Enter the number : 2395`  | `5 9 3 2` |
 |   2   | `Enter the number : 1018`  | `8 1 0 1` |
 |   3   | `Enter the number : -1018`  | `8 1 0 1` |
-|   3   | `Enter the number : 9000`  | `0 0 0 9` |
+|   4   | `Enter the number : 9000`  | `0 0 0 9` |
 
 
 PROGRAM2:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 12`  | `2  4  6  8  10  12` |
-|   2   | `Enter the number : 10`  | `2  4  6  8  10` |
-|   3   | `Enter the number : -10`  | `2  4  6  8  10` |
+|   1   | `Enter the number : 2395`  | `There is no Zero` |
+|   2   | `Enter the number : 1018`  | `It Contains Zero` |
+|   3   | `Enter the number : 9000`  | `It Contains Zero` |
+|   4   | `Enter the number : 10687`  | `It Contains Zero` |
      
 
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 10`  | `1  3  5  7  9` |
-|   2   | `Enter the number : 20`  | `1  3  5  7  9  11  13  15  17  19` |
-|   3   | `Enter the number : 12`  | `1  3  5  7  9  11` |
-|   4   | `Enter the number : -12`  | `1  3  5  7  9  11` |
+|   1   | `Enter the number : 2395`  | `1` |
+|   2   | `Enter the number : 1018`  | `0` |
+|   3   | `Enter the number : 9000`  | `0` |
+|   4   | `Enter the number : 922432`  | `3` |
 
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 3`  | `6` |
-|   2   | `Enter the number : 5`  | `15` |
-|   3   | `Enter the number : 10`  | `55` |
-|   4   | `Enter the number : -10`  | `55` |
+|   1   | `Enter the number : 2395`  | `0` |
+|   2   | `Enter the number : 1018`  | `0` |
+|   3   | `Enter the number : 9440`  | `2` |
+|   4   | `Enter the number : 922432`  | `1` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 3`  | `2` |
-|   2   | `Enter the number : 5`  | `6` |
-|   3   | `Enter the number : 10`  | `30` |
-|   4   | `Enter the number : -10`  | `30` |
-|   5   | `Enter the number : 24`  | `156` |
+|   1   | `Enter the number : 2395`  | `3` |
+|   2   | `Enter the number : 1018`  | `3` |
+|   3   | `Enter the number : 9440`  | `3` |
+|   4   | `Enter the number : 96672`  | `1` |
 
 
 
