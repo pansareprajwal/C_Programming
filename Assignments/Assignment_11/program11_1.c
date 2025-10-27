@@ -13,11 +13,18 @@
 
 void RangeDisplay(int iStart, int iEnd)
 {
+    if(iStart > iEnd)
+    {
+        printf("Invalid Input");
+    }
+    else
+    {
     int iCnt = 0;
 
     for(iCnt = iStart; iCnt <= iEnd; iCnt++)
     {
         printf(" %d ",iCnt);
+    }
     }
 }
 
