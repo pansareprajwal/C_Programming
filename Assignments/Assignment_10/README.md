@@ -20,16 +20,14 @@ PROGRAM3:
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|-----------------------------|
-|   1   | `Enter number 5`   | `Even Factorial of number is 15`|
-|   2   | `Enter number -5`  | `Even Factorial of number is 15`|
-|   3   | `Enter number 10`   | `Even Factorial of number is 945`|
+|   1   | `Enter temperature is Fahrenheit 10`   | `-12.22`|
+|   2   | `Enter temperature is Fahrenheit 34`   | `1.11`|
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|-----------------------------|
-|   1   | `Enter number 5`   | `Facotrial difference is -7`|
-|   2   | `Enter number -5`  | `Facotrial difference is -7`|
-|   3   | `Enter number 10`   | `Facotrial difference is 2895`|
+|   1   | `Enter area is square feet 5`   | `0.46`|
+|   2   | `Enter area is square feet 7`   | `0.65`|
 
 
 
