@@ -1,17 +1,15 @@
 PROGRAM1:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter number 5`  | ` * * * * * # # # # # ` |
-|   2   | `Enter number 6`  | ` * * * * * * # # # # # # # ` |
-|   3   | `Enter number -5` | ` * * * * * # # # # # ` |
-|   4   | `Enter number 2` | ` * * # # `          |
+|   1   | `Enter radius : 5.3`  | `Area of Circle is 88.2026` |
+|   2   | `Enter radius : 10.4`  | `Area of Circle is 339.6224` |
 
 PROGRAM2:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
 |   1   | `Enter number of USD : 10` | `Value in INR is 700`|
-|   2   | `Enter number of USD : 3` | `Value in INR is 210`|
-|   3   | `Enter number of USD : 1200` | `Value in INR is 84000`|
+|   1   | `Enter number of USD : 3` | `Value in INR is 210`|
+|   1   | `Enter number of USD : 1200` | `Value in INR is 84000`|
 
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
