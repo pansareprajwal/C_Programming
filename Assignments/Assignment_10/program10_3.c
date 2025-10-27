@@ -2,22 +2,22 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : RectArea
-//  Description :   To get area of the Rectangle
-//  Input :         float, float
-//  Output :        float
+//  Function name : KMtoMeter
+//  Description :   To convert distance kilometer into meter
+//  Input :         int
+//  Output :        int
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          27/10/2025
 //
 //////////////////////////////////////////////////////////////
 
-double RectArea(float fWidth, float fHeight)
+int KMtoMeter(int iKm)
 {
-    float fArea = 0.0;
+    int iM = 0;
 
-    fArea = fWidth*fHeight;
+    iM = iKm*1000;
 
-    return fArea;
+    return iM;
 }
 
 //////////////////////////////////////////////////////////////
@@ -28,18 +28,14 @@ double RectArea(float fWidth, float fHeight)
 
 int main()
 {
-    float fValue1, fValue2 = 0.0;
-    double dRet = 0.0;
+    int iValue, iRet = 0;
 
-    printf("Enter width : ");
-    scanf("%f",&fValue1);
+    printf("Enter distance : ");
+    scanf("%d",&iValue);
 
-    printf("Enter height : ");
-    scanf("%f",&fValue2);
+    iRet = KMtoMeter(iValue);
 
-    dRet = RectArea(fValue1, fValue2);
-
-    printf("Area of Rectangle is %f", dRet);
+    printf("%d", iRet);
 
     return 0;
 }

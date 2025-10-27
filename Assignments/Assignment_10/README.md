@@ -13,9 +13,8 @@ PROGRAM2:
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|-----------------------------|
-|   1   | `Enter number 5`   | `Even Factorial of number is 8`|
-|   2   | `Enter number -5`  | `Even Factorial of number is 8`|
-|   3   | `Enter number 10`   | `Even Factorial of number is 3840` |
+|   1   | `Enter distance 5`   | `5000`|
+|   2   | `Enter distance 12`   | `12000`|
 
 
 PROGRAM4:
