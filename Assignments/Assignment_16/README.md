@@ -21,18 +21,14 @@ PROGRAM3:
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 2395`  | `270` |
-|   2   | `Enter the number : 1018`  | `8` |
-|   3   | `Enter the number : 9440`  | `144` |
-|   4   | `Enter the number : 922432`  | `864` |
+|   1   | `1234`  | `4321` |
+|   2   | `4567`  | `7654` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 2395`  | `-15` |
-|   2   | `Enter the number : 1018`  | `6` |
-|   3   | `Enter the number : 8440`  | `16` |
-|   4   | `Enter the number : 5733`  | `-18` |
+|   1   | `7865`  | `4` |
+|   2   | `789034`  | `6` |
 
 
 

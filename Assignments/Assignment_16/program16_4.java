@@ -3,8 +3,8 @@ class Logic
 
     //////////////////////////////////////////////////////////////
     //
-    //  Function name : findFactorial
-    //  Description   : To get factorial of input
+    //  Function name : reverseNumber
+    //  Description   : To reverse the number
     //  Input         : int
     //  Output        : void
     //  Author        : Prajwal Sanjay Pansare
@@ -12,21 +12,21 @@ class Logic
     //
     //////////////////////////////////////////////////////////////
 
-    void findFactorial(int num)
+    void reverseNumber(int num)
     {
-        int iCnt = 0;
-        int iFact = 0;
-
-        iFact = 1;
-        for(iCnt = 1; iCnt < num; iCnt++)
+        if(num < 0)
         {
-            if((num % iCnt) == 0)
-            {
-                iFact *= iCnt;
-            }
-            
+            num = -num;
         }
-        System.out.print("Factorial is : " + iFact);
+
+        int iDigit = 0;
+
+        while(num != 0)
+        {
+            iDigit = num % 10;
+            num = num/10;
+            System.out.print(iDigit);
+        }
     }
 }
 
@@ -36,11 +36,11 @@ class Logic
 //
 //////////////////////////////////////////////////////////////
 
-class program16_3
+class program16_4
 {
     public static void main(String argu[])
     {
         Logic obj = new Logic();
-        obj.findFactorial(10);
+        obj.reverseNumber(1234);
     }
 }
