@@ -18,22 +18,28 @@ PROGRAM2:
 
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
-|:-----:|--------------------|-----------------------------|
-|   1   | `Enter distance 5`   | `5000`|
-|   2   | `Enter distance 12`   | `12000`|
-
+|:-----:|--------------------|------------------|
+|   1   | `Enter Starting point 20 Enter  ending point 30`  | `Additon is 212` |
+|   2   | `Enter Starting point 10 Enter  ending point 18`  | `Additon is 126` |
+|   3   | `Enter Starting point -10 Enter  ending point 2`  | `Invalid Range` |
+|   4  | `Enter Starting point 90 Enter  ending point 18`  | `Invalid Range` |
 
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
-|:-----:|--------------------|-----------------------------|
-|   1   | `Enter temperature is Fahrenheit 10`   | `-12.22`|
-|   2   | `Enter temperature is Fahrenheit 34`   | `1.11`|
+|:-----:|--------------------|------------------|
+|   1   | `Enter Starting point 20 Enter  ending point 30`  | `Additon is 108` |
+|   2   | `Enter Starting point 10 Enter  ending point 18`  | `Additon is 70` |
+|   3   | `Enter Starting point -10 Enter  ending point 2`  | `Invalid Range` |
+|   4  | `Enter Starting point 90 Enter  ending point 18`  | `Invalid Range` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
-|:-----:|--------------------|-----------------------------|
-|   1   | `Enter area is square feet 5`   | `0.46`|
-|   2   | `Enter area is square feet 7`   | `0.65`|
+|:-----:|--------------------|------------------|
+|   1   | `Enter Starting point 23 Enter  ending point 35`  | `35  34  33  32  31  30  29  28  27  26  25  24  23` |
+|   2   | `Enter Starting point 10 Enter  ending point 18`  | `18  17  16  15  14  13  12  11  10` |
+|   3   | `Enter Starting point 10 Enter  ending point 10`  | `10` |
+|   4   | `Enter Starting point -10 Enter  ending point 2`  | `Invalid Range` |
+|   5  | `Enter Starting point 90 Enter  ending point 18`  | `Invalid Range` |
 
 
 
