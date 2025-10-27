@@ -3,8 +3,8 @@ class Logic
 
     //////////////////////////////////////////////////////////////
     //
-    //  Function name : calculateSum
-    //  Description   : To get summatation of natural numbers
+    //  Function name : checkEvenOdd
+    //  Description   : To check whether a given number is even or odd
     //  Input         : int
     //  Output        : void
     //  Author        : Prajwal Sanjay Pansare
@@ -12,16 +12,16 @@ class Logic
     //
     //////////////////////////////////////////////////////////////
 
-    void calculateSum(int num)
+    void checkEvenOdd(int num)
     {
-        int iCnt = 0;
-        int iSum = 0;
-
-        for(iCnt = 1; iCnt <= num; iCnt++)
+        if((num % 2) == 0)
         {
-            iSum = iSum + iCnt;
+            System.out.print("It is Even number");
         }
-        System.out.print("Sum is : "+ iSum);
+        else
+        {
+            System.out.print("It is Odd number");
+        }
     }
 }
 
@@ -31,11 +31,11 @@ class Logic
 //
 //////////////////////////////////////////////////////////////
 
-class program16_1
+class program16_2
 {
     public static void main(String argu[])
     {
         Logic obj = new Logic();
-        obj.calculateSum(10);
+        obj.checkEvenOdd(7);
     }
 }

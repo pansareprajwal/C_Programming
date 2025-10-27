@@ -1,26 +1,22 @@
 PROGRAM1:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `7`  | `It is Odd number` |
-|   2   | `6`  | `It is Even number` |
+|   1   | `10`  | `Sum is 55` |
+|   2   | `32`  | `Sum is 528` |
 
 
 PROGRAM2:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 2395`  | `3` |
-|   2   | `Enter the number : 1018`  | `2` |
-|   3   | `Enter the number : -1018`  | `2` |
-|   4   | `Enter the number : 8462`  | `0` |
+|   1   | `7`  | `It is Odd number` |
+|   2   | `6`  | `It is Even number` |
      
 
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number : 2395`  | `1` |
-|   2   | `Enter the number : 1018`  | `0` |
-|   3   | `Enter the number : 4521`  | `2` |
-|   4   | `Enter the number : 9922`  | `0` |
+|   1   | `5`  | `Factorial is : 1` |
+|   2   | `10`  | `Factorial is : 10` |
 
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |

@@ -3,8 +3,8 @@ class Logic
 
     //////////////////////////////////////////////////////////////
     //
-    //  Function name : calculateSum
-    //  Description   : To get summatation of natural numbers
+    //  Function name : findFactorial
+    //  Description   : To check whether a given number is even or odd
     //  Input         : int
     //  Output        : void
     //  Author        : Prajwal Sanjay Pansare
@@ -12,16 +12,21 @@ class Logic
     //
     //////////////////////////////////////////////////////////////
 
-    void calculateSum(int num)
+    void findFactorial(int num)
     {
         int iCnt = 0;
-        int iSum = 0;
+        int iFact = 0;
 
-        for(iCnt = 1; iCnt <= num; iCnt++)
+        iFact = 1;
+        for(iCnt = 1; iCnt < num; iCnt++)
         {
-            iSum = iSum + iCnt;
+            if((num % iCnt) == 0)
+            {
+                iFact *= iCnt;
+            }
+            
         }
-        System.out.print("Sum is : "+ iSum);
+        System.out.print("Factorial is : " + iFact);
     }
 }
 
@@ -31,11 +36,11 @@ class Logic
 //
 //////////////////////////////////////////////////////////////
 
-class program16_1
+class program16_3
 {
     public static void main(String argu[])
     {
         Logic obj = new Logic();
-        obj.calculateSum(10);
+        obj.findFactorial(10);
     }
 }
