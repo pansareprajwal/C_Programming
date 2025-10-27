@@ -9,9 +9,9 @@ PROGRAM1:
 PROGRAM2:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter number 9`    | `Nine`           |
-|   2   | `Enter number -3`   | `Three`          |
-|   3   | `Enter number 12`   | `Invalid Number` |
+|   1   | `Enter number of USD : 10` | `Value in INR is 700`|
+|   1   | `Enter number of USD : 3` | `Value in INR is 210`|
+|   1   | `Enter number of USD : 1200` | `Value in INR is 84000`|
 
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
