@@ -7,9 +7,8 @@ PROGRAM1:
 PROGRAM2:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter number of USD : 10` | `Value in INR is 700`|
-|   1   | `Enter number of USD : 3` | `Value in INR is 210`|
-|   1   | `Enter number of USD : 1200` | `Value in INR is 84000`|
+|   1   | `Enter width : 5.3 Enter height : 9.78` | `Area of Rectangle is 51.8340`|
+     
 
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
