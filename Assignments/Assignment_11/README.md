@@ -9,7 +9,11 @@ PROGRAM1:
 PROGRAM2:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter width : 5.3 Enter height : 9.78` | `Area of Rectangle is 51.8340`|
+|   1   | `Enter Starting point 23 Enter  ending point 35`  | `24  26  28  30  32  34` |
+|   2   | `Enter Starting point 10 Enter  ending point 18`  | `10  12  14  16  18` |
+|   3   | `Enter Starting point -10 Enter  ending point 2`  | `10` |
+|   4   | `Enter Starting point -10 Enter  ending point 2`  | `-10  -8  -6  -4  -2  0  2` |
+|   5   | `Enter Starting point 90 Enter  ending point 18`  | `Invalid Range` |
      
 
 PROGRAM3:
