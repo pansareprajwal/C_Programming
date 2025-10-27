@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : EvenFactorial
-//  Description :   To get event facotrial of input number
+//  Function name : OddFactorial
+//  Description :   To get Odd facotrial of input number
 //  Input :         int
 //  Output :        int
 //  Author :        Prajwal Sanjay Pansare
@@ -11,7 +11,7 @@
 //
 //////////////////////////////////////////////////////////////
 
-int EvenFactorial(int iNo)
+int OddFactorial(int iNo)
 {
     if(iNo < 0)
     {
@@ -23,7 +23,7 @@ int EvenFactorial(int iNo)
     iTotal = 1;
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
-        if((iCnt % 2) == 0)
+        if((iCnt % 2) != 0)
         {
             iTotal = iTotal*iCnt;
         }
@@ -45,9 +45,9 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    iRet = EvenFactorial(iValue);
+    iRet = OddFactorial(iValue);
 
-    printf("Event Factorial of number is %d", iRet);
+    printf("Odd Factorial of number is %d", iRet);
 
     return 0;
 }

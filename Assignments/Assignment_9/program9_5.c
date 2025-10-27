@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : EvenFactorial
-//  Description :   To get event facotrial of input number
+//  Function name : FactorialDiff
+//  Description :   To get facotrial differcne of input
 //  Input :         int
 //  Output :        int
 //  Author :        Prajwal Sanjay Pansare
@@ -11,25 +11,30 @@
 //
 //////////////////////////////////////////////////////////////
 
-int EvenFactorial(int iNo)
+int FactorialDiff(int iNo)
 {
     if(iNo < 0)
     {
         iNo = -iNo; 
     }
 
-    int iCnt, iTotal = 0;
+    int iCnt, iEven, iOdd = 0;
 
-    iTotal = 1;
+    iEven = 1;
+    iOdd = 1;
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
         if((iCnt % 2) == 0)
         {
-            iTotal = iTotal*iCnt;
+            iEven = iEven*iCnt;
+        }
+        else
+        {
+            iOdd = iOdd*iCnt;
         }
     }
 
-    return iTotal;
+    return iEven-iOdd;
 }
 
 //////////////////////////////////////////////////////////////
@@ -45,9 +50,9 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    iRet = EvenFactorial(iValue);
+    iRet = FactorialDiff(iValue);
 
-    printf("Event Factorial of number is %d", iRet);
+    printf("Factorial difference is %d", iRet);
 
     return 0;
 }
