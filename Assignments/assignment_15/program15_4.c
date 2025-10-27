@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Count
-//  Description :   To check frequency of digits smaller than 6 in number
+//  Function name : MultiDigits
+//  Description :   To get multiplication of all in frequencies in number
 //  Input :         int
 //  Output :        int
 //  Author :        Prajwal Sanjay Pansare
@@ -11,32 +11,32 @@
 //
 //////////////////////////////////////////////////////////////
 
-int Count(int iNo)
+int MultiDigits(int iNo)
 {
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    int iDigit, iFreq = 0;
+    int iDigit, iMult = 0;
 
+    iMult = 1;
     while(iNo != 0)
     {
         iDigit = iNo % 10;
         iNo = iNo/10;
-        if(iDigit < 6)
+        if(iDigit == 0)
         {
-            iFreq++;
+            iDigit = 1;
         }
+        iMult *= iDigit;
+        
     }
-    return iFreq;
+    return iMult;
 }
 
 /*
-    Time Complexity:
-        Best Case    : O(1)      
-        Worst Case   : O(N)   
-        Average Case : O(log N)   
+    Time Complexity: O(N)  
 */
 
 //////////////////////////////////////////////////////////////
@@ -53,7 +53,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    iRet = Count(iValue);
+    iRet = MultiDigits(iValue);
 
     printf("%d",iRet);
   

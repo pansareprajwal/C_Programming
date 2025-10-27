@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Count
-//  Description :   To check frequency of digits smaller than 6 in number
+//  Function name : CountRange
+//  Description :   To check frequency of digits between 3 & 7 in number
 //  Input :         int
 //  Output :        int
 //  Author :        Prajwal Sanjay Pansare
@@ -11,7 +11,7 @@
 //
 //////////////////////////////////////////////////////////////
 
-int Count(int iNo)
+int CountRange(int iNo)
 {
     if(iNo < 0)
     {
@@ -24,7 +24,7 @@ int Count(int iNo)
     {
         iDigit = iNo % 10;
         iNo = iNo/10;
-        if(iDigit < 6)
+        if((iDigit > 3) && (iDigit < 7))
         {
             iFreq++;
         }
@@ -53,7 +53,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    iRet = Count(iValue);
+    iRet = CountRange(iValue);
 
     printf("%d",iRet);
   

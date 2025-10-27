@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Count
-//  Description :   To check frequency of digits smaller than 6 in number
+//  Function name : CountDiff
+//  Description :   To get difference between summation of even and odd frequnecies
 //  Input :         int
 //  Output :        int
 //  Author :        Prajwal Sanjay Pansare
@@ -11,32 +11,34 @@
 //
 //////////////////////////////////////////////////////////////
 
-int Count(int iNo)
+int CountDiff(int iNo)
 {
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    int iDigit, iFreq = 0;
+    int iDigit = 0, iEvenSum = 0, iOddSum = 0;
 
     while(iNo != 0)
     {
         iDigit = iNo % 10;
         iNo = iNo/10;
-        if(iDigit < 6)
+        if((iDigit % 2) == 0)
         {
-            iFreq++;
+            iEvenSum += iDigit;
         }
+        else
+        {
+            iOddSum += iDigit;
+        }
+        
     }
-    return iFreq;
+    return iEvenSum-iOddSum;
 }
 
 /*
-    Time Complexity:
-        Best Case    : O(1)      
-        Worst Case   : O(N)   
-        Average Case : O(log N)   
+    Time Complexity: O(N)  
 */
 
 //////////////////////////////////////////////////////////////
@@ -53,7 +55,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    iRet = Count(iValue);
+    iRet = CountDiff(iValue);
 
     printf("%d",iRet);
   

@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Count
-//  Description :   To check frequency of digits smaller than 6 in number
+//  Function name : CountEven
+//  Description :   To check frequency of even digits in number
 //  Input :         int
 //  Output :        int
 //  Author :        Prajwal Sanjay Pansare
@@ -11,7 +11,7 @@
 //
 //////////////////////////////////////////////////////////////
 
-int Count(int iNo)
+int CountEven(int iNo)
 {
     if(iNo < 0)
     {
@@ -24,7 +24,7 @@ int Count(int iNo)
     {
         iDigit = iNo % 10;
         iNo = iNo/10;
-        if(iDigit < 6)
+        if((iDigit % 2) == 0)
         {
             iFreq++;
         }
@@ -53,7 +53,7 @@ int main()
     printf("Enter number : ");
     scanf("%d",&iValue);
 
-    iRet = Count(iValue);
+    iRet = CountEven(iValue);
 
     printf("%d",iRet);
   
