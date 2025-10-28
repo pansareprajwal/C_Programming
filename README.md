@@ -49,11 +49,11 @@ C_PROGRAMMING/
 |
 ├── Assignments/
 |   │
-|   ├── Assignment_1/
+|   ├── Assignment_01/
 |   │   ├── program1_1.c
 |   │   ├── program1_2.c
 |   │
-|   ├── Assignment_2/
+|   ├── Assignment_02/
 |   │   ├── program2_1.c
 |   │   ├── program2_2.c
 |   │
