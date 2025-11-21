@@ -14,10 +14,11 @@
 void Pattern(int iNo)
 {
     int iCnt = 0;
+    char ch = 'A';
 
-    for(iCnt = 0; iCnt < iNo; iCnt++)
+    for(iCnt = 0; iCnt < iNo; iCnt++, ch++)
     {
-        printf("%c\t",'A'+iCnt);
+        printf("%c\t",ch);
     }
 }
 
