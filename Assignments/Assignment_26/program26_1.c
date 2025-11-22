@@ -14,9 +14,9 @@
 void Pattern(int iNo)
 {
     int iCnt = 0;
-    char ch = 'A';
+    char ch = '\0';
 
-    for(iCnt = 0; iCnt < iNo; iCnt++, ch++)
+    for(iCnt = 0, ch = 'A'; iCnt < iNo; iCnt++, ch++)
     {
         printf("%c\t",ch);
     }
