@@ -15,6 +15,12 @@ void Pattern(int iRow, int iCol)
 {
     int i = 0, j = 0;
 
+    if(iRow != iCol)
+    {
+        printf("Invalid Input\n");
+        return;
+    }
+
     for(int i = 1; i <= iRow; i++)
     {
         for(int j = iCol; j >= 1; j--)

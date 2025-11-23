@@ -14,20 +14,20 @@ PROGRAM2:
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number of rows and columns : 5 5`  | `a b c d e`<br>`1 2 3 4 5`<br>`a b c d e`<br>`1 2 3 4 5`<br>`a b c d e` |
-|   2   | `Enter the number of rows and columns : 3 3`  | `a b c`<br>`1 2 3`<br>`a b c` |
+|   1   | `Enter the number of rows and columns : 5 5`  | `$ * * * *`<br>`* $ * * *`<br>`* * $ * *`<br>`* * * $ *`<br>`* * * * $` |
+|   2   | `Enter the number of rows and columns : 3 3`  | `$ * *`<br>`* $ *`<br>`* * $` |
 
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number of rows and columns : 5 5`  | `1 2 3 4 5`<br>`-1 -2 -3 -4 -5`<br>`1 2 3 4 5`<br>`-1 -2 -3 -4 -5`<br>`1 2 3 4 5` |
-|   2   | `Enter the number of rows and columns : 3 3`  | `1 2 3`<br>`-1 -2 -3`<br>`1 2 3` |
+|   1   | `Enter the number of rows and columns : 6 5`  | `* * * * *`<br>`* @ @ @ *`<br>`* @ @ @ *`<br>`* @ @ @ *`<br>`* @ @ @ *`<br>`* * * * *` |
+|   2   | `Enter the number of rows and columns : 3 3`  | `* * *`<br>`* @ *`<br>`* * *` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number of rows and columns : 4 4`  | `1 2 3 4`<br>`2 3 4 5`<br>`3 4 5 6`<br>`4 5 6 7` |
-|   2   | `Enter the number of rows and columns : 3 3`  | `1 2 3`<br>`2 3 4`<br>`3 4 5` |
+|   1   | `Enter the number of rows and columns : 4 4`  | `1 2 3 4`<br>`1 * * 4`<br>`1 * * 4`<br>`1 2 3 4` |
+|   2   | `Enter the number of rows and columns : 3 3`  | `1 2 3`<br>`1 * 3`<br>`1 2 3` |
 
 
 
