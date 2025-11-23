@@ -21,7 +21,7 @@ PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
 |   1   | `Enter the number of rows and columns : 6 6`  | `* * * * * *`<br>`* *       *`<br>`*   *     *`<br>`*     *   *`<br>`*       * *`<br>`* * * * * *` |
-|   2   | `Enter the number of rows and columns : 4 4`  | `* * * *`<br>`* *   *`<br>`* *   *`<br>`* * * *` |
+|   2   | `Enter the number of rows and columns : 4 4`  | `* * * *`<br>`* *   *`<br>`*   * *`<br>`* * * *` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
