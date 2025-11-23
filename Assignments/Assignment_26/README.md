@@ -15,14 +15,14 @@ PROGRAM2:
 PROGRAM3:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the elements : 5`  | `5 * 4 * 3 * 2 * 1 *` |
-|   2   | `Enter the elements : 3`  | `3 * 2 * 1 *` |
+|   1   | `Enter the elements : 5`  | `1 * 2 * 3 * 4 * 5 *` |
+|   2   | `Enter the elements : 3`  | `1 * 2 * 3 *` |
 
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the elements : 5`  | `# 5 * # 4 * # 3 * # 2 * # 1 *` |
-|   2   | `Enter the elements : 3`  | `# 3 * # 2 * # 1 *` |
+|   1   | `Enter the elements : 5`  | `# 1 * # 2 * # 3 * # 4 * # 5 *` |
+|   2   | `Enter the elements : 3`  | `# 1 * # 2 * # 3 *` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
