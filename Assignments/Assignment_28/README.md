@@ -1,7 +1,7 @@
 PROGRAM1:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number of rows and columns : 4 4`  | `A B C D`br>`A B C D`<br>`A B C D`<br>`A B C D` |
+|   1   | `Enter the number of rows and columns : 4 4`  | `A B C D`<br>`A B C D`<br>`A B C D`<br>`A B C D` |
 |   2   | `Enter the number of rows and columns : 3 3`  | `A B C`<br>`A B C`<br>`A B C` |
 
 PROGRAM2:
