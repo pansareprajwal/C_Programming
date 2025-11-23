@@ -26,8 +26,8 @@ PROGRAM4:
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `Enter the number of rows and columns : 4 4`  | `1 2 3 4`<br>`1 * * 4`<br>`1 * * 4`<br>`1 2 3 4` |
-|   2   | `Enter the number of rows and columns : 3 3`  | `1 2 3`<br>`1 * 3`<br>`1 2 3` |
+|   1   | `Enter the number of rows and columns : 4 4`  | `1 2 3 4`<br>`  2 3 4`<br>`    3 4`<br>`      4` |
+|   2   | `Enter the number of rows and columns : 3 3`  | `1 2 3`<br>`  2 3`<br>`    3` |
 
 
 
