@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Reverse
-//  Description :   display the reverse string
+//  Function name : DisplayDigit
+//  Description :   Display only digits from string
 //  Input :         char 
 //  Output :        void
 //  Author :        Prajwal Sanjay Pansare
@@ -11,22 +11,14 @@
 //
 //////////////////////////////////////////////////////////////
 
-void Reverse(char *src)
+void DisplayDigit(char *src)
 {
-    char *temp = src;
-
-    while(*temp != '\0')
-    {
-        temp++;
-    }
-
-    temp--;
-
     while(*src != '\0')
     {
-        printf("%c",*temp);
-
-        temp--;
+        if((*src >= '0') && (*src <= '9'))
+        {
+            printf("%c",*src);
+        }
         src++;
     }
 
@@ -40,7 +32,7 @@ int main()
     printf("Enter string : \n");
     scanf("%[^'\n']s",arr);
 
-    Reverse(arr);
+    DisplayDigit(arr);
 
     return 0;
 }

@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Reverse
-//  Description :   display the reverse string
+//  Function name : CountWhite
+//  Description :   count the number of spaces
 //  Input :         char 
 //  Output :        void
 //  Author :        Prajwal Sanjay Pansare
@@ -11,24 +11,20 @@
 //
 //////////////////////////////////////////////////////////////
 
-void Reverse(char *src)
+int CountWhite(char *src)
 {
-    char *temp = src;
-
-    while(*temp != '\0')
-    {
-        temp++;
-    }
-
-    temp--;
+    int iCount = 0;
 
     while(*src != '\0')
     {
-        printf("%c",*temp);
-
-        temp--;
+        if(*src == ' ')
+        {
+            iCount++;
+        }
         src++;
     }
+
+    return iCount++;
 
     printf("\n");
 }
@@ -36,11 +32,14 @@ void Reverse(char *src)
 int main()
 {
     char arr[20];
+    int iRet = 0;
 
     printf("Enter string : \n");
     scanf("%[^'\n']s",arr);
 
-    Reverse(arr);
+    iRet = CountWhite(arr);
+
+    printf("%d",iRet);
 
     return 0;
 }

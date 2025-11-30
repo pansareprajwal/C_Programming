@@ -2,8 +2,8 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Reverse
-//  Description :   display the reverse string
+//  Function name : struprx
+//  Description :   Convert string to upper case
 //  Input :         char 
 //  Output :        void
 //  Author :        Prajwal Sanjay Pansare
@@ -11,22 +11,19 @@
 //
 //////////////////////////////////////////////////////////////
 
-void Reverse(char *src)
+void struprx(char *src)
 {
-    char *temp = src;
-
-    while(*temp != '\0')
-    {
-        temp++;
-    }
-
-    temp--;
-
     while(*src != '\0')
     {
-        printf("%c",*temp);
-
-        temp--;
+        if((*src >= 'a') && (*src <= 'z'))
+        {
+            *src = *src - 32;
+            printf("%c",*src);
+        }
+        else
+        {
+            printf("%c",*src);
+        }
         src++;
     }
 
@@ -40,7 +37,7 @@ int main()
     printf("Enter string : \n");
     scanf("%[^'\n']s",arr);
 
-    Reverse(arr);
+    struprx(arr);
 
     return 0;
 }
