@@ -5,7 +5,7 @@
 //  Function name : ChkVowel
 //  Description :   Checking whether string contains vowels or not
 //  Input :         char 
-//  Output :        void
+//  Output :        BOOL
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          30/11/2025
 //

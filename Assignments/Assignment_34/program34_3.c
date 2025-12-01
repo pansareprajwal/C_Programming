@@ -19,14 +19,14 @@ void Display(char ch)
     {
         for(cCnt = ch; cCnt >= 'a'; cCnt--)
         {
-            printf("%c",cCnt);
+            printf("%c\t",cCnt);
         }
     }  
     else if((ch >= 'A') && (ch <= 'Z'))
     {
         for(cCnt = ch; cCnt <= 'Z'; cCnt++)
         {
-            printf("%c",cCnt);
+            printf("%c\t",cCnt);
         }
     }
 

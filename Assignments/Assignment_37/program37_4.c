@@ -2,7 +2,7 @@
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : FirstChar
+//  Function name : LastChar
 //  Description :   Return index of the first occurence of character
 //  Input :         char, chr
 //  Output :        int
@@ -11,7 +11,7 @@
 //
 //////////////////////////////////////////////////////////////
 
-int FirstChar(char *str, char ch)
+int LastChar(char *str, char ch)
 {
     int iCount = 0;
     int iFrequency = 0;
@@ -48,7 +48,7 @@ int main()
     printf("Enter the character : \n");
     scanf(" %c",&cValue);
 
-    iRet = FirstChar(arr, cValue);
+    iRet = LastChar(arr, cValue);
 
     printf("%d",iRet);
 

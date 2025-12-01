@@ -5,7 +5,7 @@
 //  Function name : CountWhite
 //  Description :   count the number of spaces
 //  Input :         char 
-//  Output :        void
+//  Output :        int
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          30/11/2025
 //
