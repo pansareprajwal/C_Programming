@@ -336,7 +336,6 @@ int main()
     InsertFirst(&First, 89);
     InsertFirst(&First, 6);
     InsertFirst(&First, 41);
-    InsertFirst(&First, 17);
     InsertFirst(&First, 28);
     InsertFirst(&First, 11);
 
