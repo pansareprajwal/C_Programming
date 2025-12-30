@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdbool.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -297,45 +296,43 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : Search
-//  Description :   To Search element in Linked List
-//  Input :         PPNODE, int
-//  Output :        bool
+//  Function name : DisplayEven
+//  Description :   Display the Even nodes of Linked list
+//  Input :         PNODE
+//  Output :        void
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          30/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-bool Search(PNODE Head, int No)
+void DisplayEven(PNODE Head)
 {
     PNODE temp = NULL;
 
-    bool flag = false;
+    int iCount = 0;
 
     temp = Head;
 
     while(temp != NULL)
     {
-        if(No == temp->Data)
+        if(((temp->Data) % 2) == 0)
         {
-            flag = true;
-            break;
+            printf("| %d |->",temp->Data);
         }
+
         temp = temp->Next;
     }
-
-    return flag;
+    printf("NULL\n");
 }
 
 int main()
 {
     PNODE First = NULL;
     int iRet = 0;
-    bool bRet = false;
 
     InsertFirst(&First, 89);
-    InsertFirst(&First, 6);
-    InsertFirst(&First, 41);
+    InsertFirst(&First, 2);
+    InsertFirst(&First, 11);
     InsertFirst(&First, 28);
     InsertFirst(&First, 11);
 
@@ -344,16 +341,7 @@ int main()
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    bRet = Search(First,4000);
-
-    if(bRet == true)
-    {
-        printf("Number is present in Linked List\n");
-    }
-    else
-    {
-        printf("Number is not present in Linked List\n");
-    }
+    DisplayEven(First);
 
     return 0;
 }
