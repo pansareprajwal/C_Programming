@@ -16,7 +16,7 @@ PROGRAM3:
 PROGRAM4:
 | **#** | **User Input** | **Program Output** |
 |:-----:|--------------------|------------------|
-|   1   | `-`  | `l 0 l->l 11 l->l 0 l->` |
+|   1   | `l -105 l->l 11 l->l -28 l->`  | `l 0 l->l 11 l->l 0 l->` |
 
 PROGRAM5:
 | **#** | **User Input** | **Program Output** |
