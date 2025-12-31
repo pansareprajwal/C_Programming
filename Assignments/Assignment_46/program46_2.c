@@ -296,8 +296,8 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : DisplayGreater
-//  Description :   To Display elements greater than given element from linked list
+//  Function name : DisplayLess
+//  Description :   To Display elements smaller than given element from linked list
 //  Input :         PNODE, int
 //  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
@@ -305,7 +305,7 @@ void DeleteAtPos(PPNODE Head, int pos)
 //
 //////////////////////////////////////////////////////////////
 
-void DisplayGreater(PNODE Head, int No)
+void DisplayLess(PNODE Head, int No)
 {
     PNODE temp = NULL;
 
@@ -313,7 +313,7 @@ void DisplayGreater(PNODE Head, int No)
 
     while(temp != NULL)
     {
-        if((temp->Data) > No)
+        if((temp->Data) < No)
         {
             printf("| %d |->",temp->Data);
         }
@@ -339,7 +339,7 @@ int main()
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    DisplayGreater(First, 41);
+    DisplayLess(First, 41);
 
     return 0;
 }

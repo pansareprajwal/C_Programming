@@ -296,30 +296,33 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : DisplayGreater
-//  Description :   To Display elements greater than given element from linked list
-//  Input :         PNODE, int
+//  Function name : IncrementAll
+//  Description :   To Increment every element by 1
+//  Input :         PPNODE
 //  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          31/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-void DisplayGreater(PNODE Head, int No)
+void IncrementAll(PPNODE Head)
 {
     PNODE temp = NULL;
 
-    temp = Head;
+    int iNo = 0;
+
+    temp = *Head;
 
     while(temp != NULL)
     {
-        if((temp->Data) > No)
-        {
-            printf("| %d |->",temp->Data);
-        }
+        iNo = temp->Data;
+
+        iNo++;
+
+        temp->Data = iNo;
+    
         temp = temp->Next;
     }
-    printf("\n");
 }
 
 int main()
@@ -327,9 +330,6 @@ int main()
     PNODE First = NULL;
     int iRet = 0;
 
-    InsertFirst(&First, 89);
-    InsertFirst(&First, 6);
-    InsertFirst(&First, 41);
     InsertFirst(&First, 28);
     InsertFirst(&First, 11);
     InsertFirst(&First, 105);
@@ -339,7 +339,12 @@ int main()
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    DisplayGreater(First, 41);
+    IncrementAll(&First);
+
+    Display(First);
+
+    iRet = Count(First);
+    printf("Number of elements are : %d\n",iRet);
 
     return 0;
 }

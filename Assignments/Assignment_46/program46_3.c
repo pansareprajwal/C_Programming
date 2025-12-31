@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -296,36 +297,34 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : DisplayGreater
-//  Description :   To Display elements greater than given element from linked list
-//  Input :         PNODE, int
+//  Function name : IsEmpty
+//  Description :   To check if list is empty or not
+//  Input :         PNODE
 //  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
 //  Date :          31/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-void DisplayGreater(PNODE Head, int No)
+bool IsEmpty(PNODE Head)
 {
     PNODE temp = NULL;
 
     temp = Head;
 
-    while(temp != NULL)
+    if(temp == NULL)
     {
-        if((temp->Data) > No)
-        {
-            printf("| %d |->",temp->Data);
-        }
-        temp = temp->Next;
+        return true;
     }
-    printf("\n");
+
+    return false;
 }
 
 int main()
 {
     PNODE First = NULL;
     int iRet = 0;
+    bool bRet = false;
 
     InsertFirst(&First, 89);
     InsertFirst(&First, 6);
@@ -339,7 +338,16 @@ int main()
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    DisplayGreater(First, 41);
+    bRet = IsEmpty(First);
+
+    if(bRet == true)
+    {
+        printf("List is Empty\n");
+    }
+    else
+    {
+        printf("List is not Empty\n");
+    }
 
     return 0;
 }
