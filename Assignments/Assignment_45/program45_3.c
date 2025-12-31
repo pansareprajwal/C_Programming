@@ -296,8 +296,8 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : DisplayOdd
-//  Description :   To Display Odd elements from linked list
+//  Function name : LastOccur
+//  Description :   To Display last occurence of elements from linked list
 //  Input :         PPNODE
 //  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
@@ -305,21 +305,27 @@ void DeleteAtPos(PPNODE Head, int pos)
 //
 //////////////////////////////////////////////////////////////
 
-void DisplayOdd(PNODE Head)
+int LastOccur(PNODE Head, int No)
 {
-    PNODE temp = NULL;
+    int iCount = 0;
+    int Frequency = 0;
 
+    PNODE temp = NULL;
     temp = Head;
+
+    iCount = 1;
 
     while(temp != NULL)
     {
-        if(((temp->Data) % 2) != 0)
+        if((temp->Data) == No)
         {
-            printf("| %d |->",temp->Data);
+            Frequency = iCount;
         }
+        iCount++;
         temp = temp->Next;
     }
-    printf("\n");
+
+    return Frequency;
 }
 
 int main()
@@ -328,9 +334,9 @@ int main()
     int iRet = 0;
 
     InsertFirst(&First, 89);
-    InsertFirst(&First, 6);
+    InsertFirst(&First, 1);
     InsertFirst(&First, 41);
-    InsertFirst(&First, 28);
+    InsertFirst(&First, 89);
     InsertFirst(&First, 11);
 
     Display(First);
@@ -338,7 +344,8 @@ int main()
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    DisplayOdd(First);
+    iRet = LastOccur(First, 89);
+    printf("Last Occurence of element : %d\n",iRet);
 
     return 0;
 }

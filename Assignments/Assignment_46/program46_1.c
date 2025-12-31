@@ -296,8 +296,8 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : DisplayOdd
-//  Description :   To Display Odd elements from linked list
+//  Function name : DisplayGreater
+//  Description :   To Display elements greater than given element from linked list
 //  Input :         PPNODE
 //  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
@@ -305,7 +305,7 @@ void DeleteAtPos(PPNODE Head, int pos)
 //
 //////////////////////////////////////////////////////////////
 
-void DisplayOdd(PNODE Head)
+void DisplayGreater(PNODE Head, int No)
 {
     PNODE temp = NULL;
 
@@ -313,7 +313,7 @@ void DisplayOdd(PNODE Head)
 
     while(temp != NULL)
     {
-        if(((temp->Data) % 2) != 0)
+        if((temp->Data) > No)
         {
             printf("| %d |->",temp->Data);
         }
@@ -332,13 +332,14 @@ int main()
     InsertFirst(&First, 41);
     InsertFirst(&First, 28);
     InsertFirst(&First, 11);
+    InsertFirst(&First, 105);
 
     Display(First);
 
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    DisplayOdd(First);
+    DisplayGreater(First, 41);
 
     return 0;
 }
