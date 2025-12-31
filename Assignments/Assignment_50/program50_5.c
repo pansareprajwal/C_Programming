@@ -296,16 +296,16 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : CountEven
-//  Description :   Count nodes containing Even values
-//  Input :         PNODE
-//  Output :        int
+//  Function name : DisplayNthPosition
+//  Description :   To Display nodes at noth position
+//  Input :         PNODE, int
+//  Output :        void
 //  Author :        Prajwal Sanjay Pansare
-//  Date :          30/12/2025
+//  Date :          31/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-int CountEven(PNODE Head)
+void DisplayNthPosition(PNODE Head, int pos)
 {
     PNODE temp = NULL;
 
@@ -313,17 +313,18 @@ int CountEven(PNODE Head)
 
     temp = Head;
 
+    iCount = 1;
+
     while(temp != NULL)
     {
-        if(((temp->Data) % 2) == 0)
+        if((iCount % pos) == 0)
         {
-            iCount++;
+            printf("| %d |->",temp->Data);
         }
-
+        iCount++;
         temp = temp->Next;
     }
-
-    return iCount;
+    printf("NULL\n");
 }
 
 //////////////////////////////////////////////////////////////
@@ -337,19 +338,19 @@ int main()
     PNODE First = NULL;
     int iRet = 0;
 
-    InsertFirst(&First, 89);
-    InsertFirst(&First, 2);
+    InsertFirst(&First, 102);
+    InsertFirst(&First, 91);
+    InsertFirst(&First, 82);
     InsertFirst(&First, 41);
-    InsertFirst(&First, 28);
-    InsertFirst(&First, 11);
-
+    InsertFirst(&First, 300);
+    InsertFirst(&First, 212);
+    
     Display(First);
 
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    iRet = CountEven(First);
-    printf("Number of Even elements are : %d\n",iRet);
+    DisplayNthPosition(First, 2);
 
     return 0;
 }

@@ -296,34 +296,47 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : CountEven
-//  Description :   Count nodes containing Even values
+//  Function name : DisplayGreaterThanAvg
+//  Description :   To Display elements greater the Average
 //  Input :         PNODE
-//  Output :        int
+//  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
-//  Date :          30/12/2025
+//  Date :          31/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-int CountEven(PNODE Head)
+void DisplayGreaterThanAvg(PNODE Head)
 {
     PNODE temp = NULL;
 
+    int iNo = 0;
+    int Average = 0;
+    int iSum = 0;
     int iCount = 0;
+    iCount = Count(Head);
 
     temp = Head;
 
     while(temp != NULL)
     {
-        if(((temp->Data) % 2) == 0)
+        iSum = iSum + temp->Data;
+        temp = temp->Next;
+    }
+
+    Average = iSum / iCount;
+
+    temp = Head;
+
+    while(temp != NULL)
+    {
+        if(temp->Data > Average)
         {
-            iCount++;
+            printf("| %d |->",temp->Data);
         }
 
         temp = temp->Next;
     }
-
-    return iCount;
+    printf("NULL\n");
 }
 
 //////////////////////////////////////////////////////////////
@@ -337,19 +350,17 @@ int main()
     PNODE First = NULL;
     int iRet = 0;
 
-    InsertFirst(&First, 89);
-    InsertFirst(&First, 2);
     InsertFirst(&First, 41);
-    InsertFirst(&First, 28);
-    InsertFirst(&First, 11);
+    InsertFirst(&First, 82);
+    InsertFirst(&First, 102);
+    InsertFirst(&First, 91);
 
     Display(First);
 
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    iRet = CountEven(First);
-    printf("Number of Even elements are : %d\n",iRet);
+    DisplayGreaterThanAvg(First);
 
     return 0;
 }

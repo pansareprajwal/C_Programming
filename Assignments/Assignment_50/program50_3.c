@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdbool.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -296,34 +297,36 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : CountEven
-//  Description :   Count nodes containing Even values
+//  Function name : CheckSorted
+//  Description :   To Check if list is sorted
 //  Input :         PNODE
-//  Output :        int
+//  Output :        bool
 //  Author :        Prajwal Sanjay Pansare
-//  Date :          30/12/2025
+//  Date :          31/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-int CountEven(PNODE Head)
+bool CheckSorted(PNODE Head)
 {
     PNODE temp = NULL;
 
-    int iCount = 0;
+    int iValue = 0;
 
     temp = Head;
 
+    iValue = temp->Data;
+
     while(temp != NULL)
     {
-        if(((temp->Data) % 2) == 0)
+        if(iValue > temp->Data)
         {
-            iCount++;
+            return false;
         }
-
+        iValue = temp->Data;
         temp = temp->Next;
     }
 
-    return iCount;
+    return true;
 }
 
 //////////////////////////////////////////////////////////////
@@ -336,20 +339,28 @@ int main()
 {
     PNODE First = NULL;
     int iRet = 0;
+    bool bRet = false;
 
-    InsertFirst(&First, 89);
-    InsertFirst(&First, 2);
+    InsertFirst(&First, 102);
+    InsertFirst(&First, 91);
+    InsertFirst(&First, 82);
     InsertFirst(&First, 41);
-    InsertFirst(&First, 28);
-    InsertFirst(&First, 11);
-
+    
     Display(First);
 
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    iRet = CountEven(First);
-    printf("Number of Even elements are : %d\n",iRet);
+    bRet = CheckSorted(First);
+    
+    if(bRet == true)
+    {
+        printf("List is Sorted\n");
+    }
+    else
+    {
+        printf("List is not Sorted\n");
+    }
 
     return 0;
 }

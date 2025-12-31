@@ -296,34 +296,34 @@ void DeleteAtPos(PPNODE Head, int pos)
 
 //////////////////////////////////////////////////////////////
 //
-//  Function name : CountEven
-//  Description :   Count nodes containing Even values
-//  Input :         PNODE
-//  Output :        int
+//  Function name : MakeAbsolute
+//  Description :   To replace negative Number with absolute value
+//  Input :         PPNODE
+//  Output :        void 
 //  Author :        Prajwal Sanjay Pansare
-//  Date :          30/12/2025
+//  Date :          31/12/2025
 //
 //////////////////////////////////////////////////////////////
 
-int CountEven(PNODE Head)
+void MakeAbsolute(PPNODE Head)
 {
     PNODE temp = NULL;
 
-    int iCount = 0;
+    int iNo = 0;
 
-    temp = Head;
+    temp = *Head;
 
     while(temp != NULL)
     {
-        if(((temp->Data) % 2) == 0)
+        if(temp->Data < 0)
         {
-            iCount++;
+            iNo = temp->Data;
+            iNo = -iNo;
+            temp->Data = iNo;
         }
 
         temp = temp->Next;
     }
-
-    return iCount;
 }
 
 //////////////////////////////////////////////////////////////
@@ -337,19 +337,22 @@ int main()
     PNODE First = NULL;
     int iRet = 0;
 
-    InsertFirst(&First, 89);
-    InsertFirst(&First, 2);
-    InsertFirst(&First, 41);
-    InsertFirst(&First, 28);
-    InsertFirst(&First, 11);
+    InsertFirst(&First, -41);
+    InsertFirst(&First, 82);
+    InsertFirst(&First, -102);
+    InsertFirst(&First, 91);
 
     Display(First);
 
     iRet = Count(First);
     printf("Number of elements are : %d\n",iRet);
 
-    iRet = CountEven(First);
-    printf("Number of Even elements are : %d\n",iRet);
+    MakeAbsolute(&First);
+
+    Display(First);
+
+    iRet = Count(First);
+    printf("Number of elements are : %d\n",iRet);
 
     return 0;
 }
